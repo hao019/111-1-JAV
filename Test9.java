@@ -2,11 +2,14 @@ import java.util.Scanner;
 
 public class Test9 {
     public static void main(String[] args) {
-        int grade = 9 ;
+        int grade = 0 ;
+        String space = "";
         
-        while (grade > -1) {
-            System.out.printf(" %d %n ", grade);
-            grade = grade - 1 ;
+        while (grade < 10) {
+            System.out.printf("%d %n", grade);
+            space = space + " ";
+            grade = grade + 1 ;
+            System.out.printf(space);
         }
     }
 }
