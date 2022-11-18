@@ -22,16 +22,16 @@ public class j2	 {       //11月18加分題
             if(row < 5) {
                 star -= 1;
                 blank += 2;
-                a=a-1;
-                b=b+1;
+                a = a - 1;
+                b = b + 1;
                 row += 1;
             }
 
             else{
                 star += 1;
                 blank -= 2;
-                a=a+1;
-                b=b-1;
+                a = a + 1;
+                b = b - 1;
                 row += 1;                
             }
 
