@@ -1,7 +1,5 @@
 public class j2	 {       //11月18加分題
     public static void main(String[] args) {
-		int star = 5;    // *
-		int blank = 1;   //空白
         int a = 6;       //左極限
         int b = 6;       //右極限
 
@@ -20,15 +18,11 @@ public class j2	 {       //11月18加分題
             }
             
             if(row < 5) {                         //橫、縱向輸出控制
-                star -= 1;
-                blank += 2;
                 a -= 1;
                 b += 1;
             }
 
-            else{
-                star += 1;
-                blank -= 2;
+            else {
                 a += 1;
                 b -= 1;               
             }
