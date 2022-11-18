@@ -1,13 +1,13 @@
-public class j2	 {
+public class j2	 {       //11月18加分題
     public static void main(String[] args) {
-		int blank = 5;
-		int star = 0;
-        int a = 5;
-        int b = 5;
+		int star = 5;    // *
+		int blank = 1;   //空白
+        int a = 6;       //左極限
+        int b = 6;       //右極限
 
-        for (int row = 0; row < 9 ;) {
-            
-            for (int col = 0; col <11; col++) {
+        for (int row = 1; row < 10 ;) {
+
+            for (int col = 1; col <= 11; col++) {
 
                 if (col >= a && col <= b) {
                     System.out.print(" ");
@@ -16,23 +16,26 @@ public class j2	 {
                 else {
                     System.out.print("*");
                 }
-            }
-            System.out.print("\n");
-            a=a-1;
-            b=b+1;
 
+            }
             
-            if(row < 4) {
-                blank -= 1;
-                star += 2;
+            if(row < 5) {
+                star -= 1;
+                blank += 2;
+                a=a-1;
+                b=b+1;
                 row += 1;
             }
+
             else{
-                blank += 1;
-                star -= 2;
-                row += 1;
+                star += 1;
+                blank -= 2;
+                a=a+1;
+                b=b-1;
+                row += 1;                
             }
-            
+
+            System.out.print("\n");
         }
     }
 }
